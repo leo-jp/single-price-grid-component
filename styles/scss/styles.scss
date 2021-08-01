@@ -1,0 +1,71 @@
+@use "sass:map";
+
+$layout:("mobile-layout": 375px, "desktop-layout": 1440px);
+$primary-color:("cyan": hsl(179, 62%, 43%), "bright-yellow": hsl(71, 73%, 54%), "dark-yellow": hsl(71, 62, 52));
+$neutral-color:("white": hsl(0,0,100),"washed": hsl(0,0,94), "light-gray": hsl(204, 43%, 93%), "grayish-blue": hsl(218, 22%, 67%));
+$font:("size-16": 16px, "Karla": "Karla", "weight-400": 400, "weight-700": 700);
+
+body {
+    //font-family: map.get($font, "Karla");
+    font-size: map.get($font, "size-16");
+    color: map.get($neutral-color, "light-gray");
+    background-color: map.get($neutral-color, "washed");
+}
+
+div.margin-top {
+    margin-top: 6em;
+}
+
+div.container-component { 
+    display: flex;
+    align-items: center;
+    width:50%;
+    border-radius: .5em; 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+div.box-component {
+    padding: 80px;
+    flex: 1;
+
+    h1 {
+        color: map.get($primary-color, "cyan");
+    }
+    h3 {
+        color: map.get($primary-color, "bright-yellow");
+    }
+    h4 {
+        color: map.get($neutral-color, "light-gray");
+    }
+    p.grayish {
+        color: map.get($neutral-color, "grayish-blue");
+    }
+    span.price {
+        color: map.get($neutral-color, "light-gray");
+    }
+
+    &.box-white {
+        border-radius: 10px 10px 0px 0px;
+        background-color: map.get($neutral-color, "white");
+    }
+
+    &.box-cyan-darker {
+        border-radius: 0px 0px 0px 10px;
+        background-color: hsl(179, 62, 43);
+    }
+
+    &.box-cyan-lighter {
+        border-radius: 0px 0px 10px 00px;
+        background-color: hsl(179, 47, 52);
+    }
+}
+
+button.bright-yellow {
+    background-color:map.get($primary-color, "bright-yellow");
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: none;
+
+    &:hover {
+        background-color: map.get($primary-color, "dark-yellow");
+    }
+}

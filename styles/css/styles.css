@@ -1,0 +1,60 @@
+body {
+  font-size: 16px;
+  color: #e5eff5;
+  background-color: #f0f0f0;
+}
+
+div.margin-top {
+  margin-top: 6em;
+}
+
+div.container-component {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  border-radius: 0.5em;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.box-component {
+  padding: 80px;
+  flex: 1;
+}
+div.box-component h1 {
+  color: #2ab2af;
+}
+div.box-component h3 {
+  color: #c0df34;
+}
+div.box-component h4 {
+  color: #e5eff5;
+}
+div.box-component p.grayish {
+  color: #98a6bd;
+}
+div.box-component span.price {
+  color: #e5eff5;
+}
+div.box-component.box-white {
+  border-radius: 10px 10px 0px 0px;
+  background-color: white;
+}
+div.box-component.box-cyan-darker {
+  border-radius: 0px 0px 0px 10px;
+  background-color: #2ab2af;
+}
+div.box-component.box-cyan-lighter {
+  border-radius: 0px 0px 10px 0px;
+  background-color: #4bbebc;
+}
+
+button.bright-yellow {
+  background-color: #c0df34;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+}
+button.bright-yellow:hover {
+  background-color: #b5d039;
+}
+
+/*# sourceMappingURL=styles.css.map */
