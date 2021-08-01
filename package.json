@@ -1,5 +1,11 @@
 {
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch styles/scss/styles.scss:styles/css/styles.css"
+  },
   "dependencies": {
-    "bootstrap": "^5.0.2"
+    "@fontsource/karla": "^4.5.0",
+    "bootstrap": "^5.0.2",
+    "sass": "^1.37.0"
   }
 }

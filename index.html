@@ -6,7 +6,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.min.css"/>
-  <link rel="stylesheet" href="./styles/styles.css" />
+  <link rel="stylesheet" href="./styles/css/styles.css" />
+  <link rel="stylesheet" href="./styles/scss/styles.scss" />
 
   <title>Frontend Mentor | Single Price Grid Component</title>
 
@@ -18,44 +19,39 @@
 </head>
 <body>
   
-  <div class="container-fluid">
-    <div class="row justify-content-center">
-      <div class="col-sm-6 box margin-top" style="background-color:darkgoldenrod">
-        <h1>Join our community</h1>
-        <h2>30-day, hassle-free money back guarantee</h2>
+  <div class="container-fluid container-component margin-top">
+      <div class="row">
+        <div class="col-sm-6 box-component box-white">
+          <h1>Join our community</h1>
+          <h3>30-day, hassle-free money back guarantee</h3>
+          <p class="grayish">Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are serious about honing their skills.</p>
+        </div>
+        
+        <!--Forcing columns to break to new line-->
+        <div class="w-100"></div>
+
+        <div class="col-sm-3 box-component box-cyan-darker">
+          <h4>Monthly Subscription</h4>
+          <p><span class="fs-3 price"><strong>&dollar;29</strong></span> per month</p>
+          <p>Full access for less than &dollar;1 a day</p>  
+          <div class="row">
+            <button type="button" class="btn btn-primary btn-block btn-lg bright-yellow"> Sign up </button>
+          </div>
+        </div>
+  
+        <div class="col-sm-3 box-component box-cyan-lighter">
+          <h4>Why Us</h4>
           <p>
-            Gain access to our full library of tutorials along with expert code reviews. 
-            Perfect for any developers who are serious about honing their skills.    
+            Tutorials by industry experts
+            Peer &amp; expert code review
+            Coding exercises
+            Access to our GitHub repos
+            Community forum
+            Flashcard decks
+            New videos every week
           </p>
-      </div>
-
-      <!-- Force next columns to break to new line -->
-      <div class="w-100"></div>
-
-      <div class="col-sm-3 box" style="background-color:sienna">
-        <h4>Monthly Subscription</h4>
-        <p><span class="fs-3"><strong>&dollar;29</strong></span> per month</p>
-        <p>Full access for less than &dollar;1 a day</p>  
-        <div class="row">
-          <button type="button" class="btn btn-primary btn-block btn-lg btn-success"> Sign up </button>
         </div>
       </div>
-        
-      <div class="col-sm-3 box" style="background-color:darkgreen">
-        <h4>Why Us</h4>
-        <p>
-          Tutorials by industry experts
-          Peer &amp; expert code review
-          Coding exercises
-          Access to our GitHub repos
-          Community forum
-          Flashcard decks
-          New videos every week
-        </p>
-      </div>
-
-    </div>
-
   </div>
 
   <footer>
