@@ -10,6 +10,8 @@ body {
     font-size: map.get($font, "size-16");
     color: map.get($neutral-color, "light-gray");
     background-color: map.get($neutral-color, "washed");
+    font-weight: map.get($font, "weight-400");
+    text-align: left;
 }
 
 div.margin-top {
@@ -25,23 +27,35 @@ div.container-component {
 }
 
 div.box-component {
-    padding: 80px;
+    padding: 50px;
     flex: 1;
 
     h1 {
         color: map.get($primary-color, "cyan");
+        margin-bottom: .5em;
     }
+
     h3 {
         color: map.get($primary-color, "bright-yellow");
+        margin-bottom: .5em;
     }
+
     h4 {
         color: map.get($neutral-color, "light-gray");
+        margin-bottom: 1em;
     }
+
+    p {
+        padding-right: 4em;
+    }
+
     p.grayish {
         color: map.get($neutral-color, "grayish-blue");
     }
+
     span.price {
         color: map.get($neutral-color, "light-gray");
+        font-weight: map.get($font, "weight-700");
     }
 
     &.box-white {
