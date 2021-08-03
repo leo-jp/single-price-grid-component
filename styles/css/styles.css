@@ -1,24 +1,121 @@
 body {
-  font-family: "Karla";
   font-size: 16px;
-}
-
-div.price-grid-component h1 {
-  color: #2ab2af;
-}
-div.price-grid-component h2 {
-  color: #c0df34;
-}
-div.price-grid-component h4 {
   color: #e5eff5;
-}
-div.margin-top {
-  margin-top: 2em;
+  background-color: #f0f0f0;
+  font-weight: 400;
+  text-align: left;
 }
 
-div.box {
-  padding: 80px;
-  box-sizing: border-box;
+div.margin-top {
+  margin-top: 6em;
+}
+
+div.container-component {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  border-radius: 0.5em;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.box-component {
+  padding: 50px;
+  flex: 1;
+}
+div.box-component h1 {
+  color: #2ab2af;
+  margin-bottom: 0.5em;
+}
+div.box-component h3 {
+  color: #c0df34;
+  margin-bottom: 0.5em;
+}
+div.box-component h4 {
+  color: #e5eff5;
+  margin-bottom: 1em;
+}
+div.box-component p {
+  padding-right: 4em;
+}
+div.box-component p.grayish {
+  color: #98a6bd;
+}
+div.box-component span.price {
+  color: #e5eff5;
+  font-weight: 700;
+}
+div.box-component.box-white {
+  border-radius: 10px 10px 0px 0px;
+  background-color: white;
+}
+div.box-component.box-cyan-darker {
+  border-radius: 0px 0px 0px 10px;
+  background-color: #2ab2af;
+}
+div.box-component.box-cyan-lighter {
+  border-radius: 0px 0px 10px 0px;
+  background-color: #4bbebc;
+}
+
+button.bright-yellow {
+  background-color: #c0df34;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+}
+button.bright-yellow:hover {
+  background-color: #b5d039;
+}
+
+@media only screen and (max-width: 375px) {
+  div.margin-top {
+    margin-top: 0;
+  }
+
+  div.container-component {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+  div.margin-top {
+    margin-top: 0;
+  }
+
+  div.container-component {
+    width: 100%;
+  }
+
+  div.box-component.box-cyan-darker {
+    border-radius: 0px 0px 0px 0px;
+  }
+  div.box-component.box-cyan-lighter {
+    border-radius: 0px 0px 10px 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  div.margin-top {
+    margin-top: 6em;
+  }
+
+  div.container-component {
+    width: 75%;
+  }
+
+  div.box-component.box-cyan-darker {
+    border-radius: 0px 0px 0px 10px;
+  }
+  div.box-component.box-cyan-lighter {
+    border-radius: 0px 0px 10px 0px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  div.container-component {
+    max-width: 75%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  div.container-component {
+    max-width: 80%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

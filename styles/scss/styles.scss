@@ -1,6 +1,6 @@
 @use "sass:map";
 
-$layout:("mobile-layout": 375px, "desktop-layout": 1440px);
+$layout:("mobile": 375px, "desktop": 1440px);
 $primary-color:("cyan": hsl(179, 62%, 43%), "bright-yellow": hsl(71, 73%, 54%), "dark-yellow": hsl(71, 62, 52));
 $neutral-color:("white": hsl(0,0,100),"washed": hsl(0,0,94), "light-gray": hsl(204, 43%, 93%), "grayish-blue": hsl(218, 22%, 67%));
 $font:("size-16": 16px, "Karla": "Karla", "weight-400": 400, "weight-700": 700);
@@ -21,7 +21,7 @@ div.margin-top {
 div.container-component { 
     display: flex;
     align-items: center;
-    width:50%;
+    width: 50%;
     border-radius: .5em; 
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -69,7 +69,7 @@ div.box-component {
     }
 
     &.box-cyan-lighter {
-        border-radius: 0px 0px 10px 00px;
+        border-radius: 0px 0px 10px 0px;
         background-color: hsl(179, 47, 52);
     }
 }
@@ -81,5 +81,74 @@ button.bright-yellow {
 
     &:hover {
         background-color: map.get($primary-color, "dark-yellow");
+    }
+}
+
+// For xs devices
+@media only screen and (max-width: map.get($layout, "mobile")) {
+    div.margin-top {
+        margin-top: 0;
+    }
+
+    div.container-component {
+        width: 100%;
+    }
+}
+
+// For mobile phones
+@media only screen and (min-width: map.get($layout, "mobile")) and (max-width: 768px) {
+    div.margin-top {
+        margin-top: 0;
+    }
+
+    div.container-component {
+        width: 100%;
+    }
+
+    div.box-component {
+        &.box-cyan-darker {
+            border-radius: 0px 0px 0px 0px;
+        }
+        
+        &.box-cyan-lighter {
+            border-radius: 0px 0px 10px 10px;
+        }
+    }
+}
+
+// For Tablet devices
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    div.margin-top {
+        margin-top: 6em;
+    }
+
+    div.container-component {
+        width: 75%;
+    }
+
+    div.box-component {
+        &.box-cyan-darker {
+            border-radius: 0px 0px 0px 10px;
+        }
+    
+        &.box-cyan-lighter {
+            border-radius: 0px 0px 10px 0px;
+        }
+    }
+}
+
+// For small laptops
+@media only screen and (min-width: 992px){
+
+    div.container-component {
+        max-width: 75%;
+    }
+
+}
+
+// for larger screen laptops/desktops
+@media only screen and (min-width: map.get($layout, "desktop")){
+    div.container-component {
+        max-width:80%;
     }
 }
