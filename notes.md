@@ -5,12 +5,20 @@ Things noticed during web development and solutions.
 ## Design-first development 
 * Familiarize & Master HTML
 * Make use of design conventions like Bootstrap, SaSS, LeSS
-  * Utilize grid system, flex, rows & cols
+  * Utilize grid system, flex, rows & cols, media queries
 * Make data connection with VueJS, ReactJS, AngularJS
   * Utilize router, component-first, state management
 * Stream data from MongoDB, MySQL, Firebase
 * Refactor as needed for future website's features.
 * Make use of best practices for each framework used.
+
+## Grid System Classes
+The Bootstrap grid system has [four classes](https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp):
+
+* xs (for phones - screens less than 768px wide)
+* sm (for tablets - screens equal to or greater than 768px wide)
+* md (for small laptops - screens equal to or greater than 992px wide)
+* lg (for laptops and desktops - screens equal to or greater than 1200px wide)
 
 ## Importing Basic Bootstrap or css styles
 ##### Inside Header
@@ -58,3 +66,21 @@ Things noticed during web development and solutions.
 
 ## Fonts
 * [Karla](https://www.npmjs.com/package/@fontsource/karla)
+
+## Media Queries
+* Rule of thumb: to apply the style based on device's width/height, use the same structure *as is!* 
+```
+div.main {
+  &.sub {
+      // style here
+  }
+}
+
+@media <condition> ( <width/height> ) {
+  div.main {
+    &.sub {
+      // new style
+    }
+  }
+}
+```

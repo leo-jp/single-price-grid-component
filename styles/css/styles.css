@@ -66,4 +66,56 @@ button.bright-yellow:hover {
   background-color: #b5d039;
 }
 
+@media only screen and (max-width: 375px) {
+  div.margin-top {
+    margin-top: 0;
+  }
+
+  div.container-component {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+  div.margin-top {
+    margin-top: 0;
+  }
+
+  div.container-component {
+    width: 100%;
+  }
+
+  div.box-component.box-cyan-darker {
+    border-radius: 0px 0px 0px 0px;
+  }
+  div.box-component.box-cyan-lighter {
+    border-radius: 0px 0px 10px 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  div.margin-top {
+    margin-top: 6em;
+  }
+
+  div.container-component {
+    width: 75%;
+  }
+
+  div.box-component.box-cyan-darker {
+    border-radius: 0px 0px 0px 10px;
+  }
+  div.box-component.box-cyan-lighter {
+    border-radius: 0px 0px 10px 0px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  div.container-component {
+    max-width: 75%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  div.container-component {
+    max-width: 80%;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
