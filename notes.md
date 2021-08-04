@@ -1,4 +1,24 @@
 # Web Development Notes
+
+## Getting Started
+* Key notes to design efficiently
+* Design-first development
+* Grid System Classes
+* Importing Basic Bootstrap or css styles
+* Stacking divs horizontally
+* Centering container
+* Forcing Columns to break new-line
+* Button match div size
+* Sass/Scss
+  * Installation and basic usage
+  * Variables
+* CSS
+  * Fonts
+  * Media Queries
+  * Sticky footer
+* Github
+
+#### Key notes to design efficiently
 Things noticed during web development and solutions.
 * Overruse of div `rows` and `cols`. Can refactor this by simplifying by using few `rows` and `cols`.
 
@@ -37,7 +57,7 @@ The Bootstrap grid system has [four classes](https://www.w3schools.com/bootstrap
 
 ## Centering container
 * prerequisite: `container-fluild`
-* Place `justify-content-center` on `.row` classes to re-align them to center.
+* Follow `.container-component` class to re-align them to center.
 
 ## Forcing columns to break to new line
 * `<div class="w-100"></div>`
@@ -64,10 +84,11 @@ The Bootstrap grid system has [four classes](https://www.w3schools.com/bootstrap
 ### Variables
 * [Maps](https://sass-lang.com/documentation/values/maps)
 
-## Fonts
+## CSS
+### Fonts
 * [Karla](https://www.npmjs.com/package/@fontsource/karla)
 
-## Media Queries
+### Media Queries
 * Rule of thumb: to apply the style based on device's width/height, use the same structure *as is!* 
 ```
 div.main {
@@ -84,3 +105,16 @@ div.main {
   }
 }
 ```
+
+### Sticky Footer 
+* [Bootstrap v.5 sticky footer](https://getbootstrap.com/docs/5.0/examples/#custom-components): This footer does not overlap the main contents
+
+#### Key Points for a better display of footer
+  * Using [flex](https://getbootstrap.com/docs/4.0/utilities/flex/) and [flex-shrink](https://cssreference.io/property/flex-shrink/)
+  * Using `footer` & `container` class
+  * `d-flex flex-column`: set to vertical direction.
+  * `flex-shrink-0`: element will not shrink
+
+
+## Github
+* [What to do when you commit to the wrong git branch](https://www.clearvision-cm.com/blog/what-to-do-when-you-commit-to-the-wrong-git-branch/)

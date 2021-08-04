@@ -14,8 +14,12 @@ body {
     text-align: left;
 }
 
-div.margin-top {
+div.mt {
     margin-top: 6em;
+}
+
+div.container {
+    text-align: center;
 }
 
 div.container-component { 
@@ -86,18 +90,28 @@ button.bright-yellow {
 
 // For xs devices
 @media only screen and (max-width: map.get($layout, "mobile")) {
-    div.margin-top {
+    div.mt {
         margin-top: 0;
     }
 
     div.container-component {
         width: 100%;
     }
+
+    div.box-component {
+        &.box-cyan-darker {
+            border-radius: 0px 0px 0px 0px;
+        }
+        
+        &.box-cyan-lighter {
+            border-radius: 0px 0px 10px 10px;
+        }
+    }
 }
 
 // For mobile phones
 @media only screen and (min-width: map.get($layout, "mobile")) and (max-width: 768px) {
-    div.margin-top {
+    div.mt {
         margin-top: 0;
     }
 
@@ -118,7 +132,7 @@ button.bright-yellow {
 
 // For Tablet devices
 @media only screen and (min-width: 768px) and (max-width: 992px){
-    div.margin-top {
+    div.mt {
         margin-top: 6em;
     }
 
@@ -139,11 +153,9 @@ button.bright-yellow {
 
 // For small laptops
 @media only screen and (min-width: 992px){
-
     div.container-component {
         max-width: 75%;
     }
-
 }
 
 // for larger screen laptops/desktops
