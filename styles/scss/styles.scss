@@ -22,6 +22,11 @@ div.container {
     text-align: center;
 }
 
+div.container-fluid {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
 div.container-component { 
     display: flex;
     align-items: center;
@@ -63,17 +68,14 @@ div.box-component {
     }
 
     &.box-white {
-        border-radius: 10px 10px 0px 0px;
         background-color: map.get($neutral-color, "white");
     }
 
     &.box-cyan-darker {
-        border-radius: 0px 0px 0px 10px;
         background-color: hsl(179, 62, 43);
     }
 
     &.box-cyan-lighter {
-        border-radius: 0px 0px 10px 0px;
         background-color: hsl(179, 47, 52);
     }
 }
@@ -93,19 +95,13 @@ button.bright-yellow {
     div.mt {
         margin-top: 0;
     }
-
+    
+    div.container-fluid {
+        border-radius: 0px;
+    }
+    
     div.container-component {
         width: 100%;
-    }
-
-    div.box-component {
-        &.box-cyan-darker {
-            border-radius: 0px 0px 0px 0px;
-        }
-        
-        &.box-cyan-lighter {
-            border-radius: 0px 0px 10px 10px;
-        }
     }
 }
 
@@ -114,19 +110,13 @@ button.bright-yellow {
     div.mt {
         margin-top: 0;
     }
-
+    
+    div.container-fluid {
+        border-radius: 0px;
+    }
+    
     div.container-component {
         width: 100%;
-    }
-
-    div.box-component {
-        &.box-cyan-darker {
-            border-radius: 0px 0px 0px 0px;
-        }
-        
-        &.box-cyan-lighter {
-            border-radius: 0px 0px 10px 10px;
-        }
     }
 }
 
@@ -138,16 +128,6 @@ button.bright-yellow {
 
     div.container-component {
         width: 75%;
-    }
-
-    div.box-component {
-        &.box-cyan-darker {
-            border-radius: 0px 0px 0px 10px;
-        }
-    
-        &.box-cyan-lighter {
-            border-radius: 0px 0px 10px 0px;
-        }
     }
 }
 
