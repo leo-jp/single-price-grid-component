@@ -32,8 +32,8 @@ See more designs [here](./design).
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [frontendmentor.io - single-price-grid-component](https://www.frontendmentor.io/solutions/single-price-grid-component-using-html-scss-and-bootstrap-GmgsGq9Cg)
+- Live Site URL: [https://leo-jp.github.io/single-price-grid-component/](https://leo-jp.github.io/single-price-grid-component/)
 
 ## My process
 

@@ -36,18 +36,14 @@ div.box-component {
 }
 div.box-component h1 {
   color: #2ab2af;
-  font-weight: 700;
-  font-size: 40px;
   margin-bottom: 0.5em;
 }
 div.box-component h2 {
   color: #c0df34;
-  font-size: 30px;
   margin-bottom: 0.4em;
 }
 div.box-component h3 {
   color: #e5eff5;
-  font-size: 25px;
   margin-bottom: 1em;
 }
 div.box-component p {
