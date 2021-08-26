@@ -1,0 +1,12 @@
+# Main
+title: Single Price Grid Component 
+author: LEO-JP
+description: A frontendmentor.io Challenge
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+
+include:
+  - node_modules
