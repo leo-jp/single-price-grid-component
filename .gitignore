@@ -15,5 +15,8 @@
 .DS_Store
 
 # Additional files to ignore
-node_modules
+node_modules/* 
 yarn.lock
+
+# exclude files from being ignored. Mandatory for Github Pages.
+!node_modules/bootstrap/

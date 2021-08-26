@@ -14,6 +14,11 @@ div.container {
   text-align: center;
 }
 
+div.container-fluid {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 div.container-component {
   display: flex;
   align-items: center;
@@ -49,15 +54,12 @@ div.box-component span.price {
   font-weight: 700;
 }
 div.box-component.box-white {
-  border-radius: 10px 10px 0px 0px;
   background-color: white;
 }
 div.box-component.box-cyan-darker {
-  border-radius: 0px 0px 0px 10px;
   background-color: #2ab2af;
 }
 div.box-component.box-cyan-lighter {
-  border-radius: 0px 0px 10px 0px;
   background-color: #4bbebc;
 }
 
@@ -75,15 +77,12 @@ button.bright-yellow:hover {
     margin-top: 0;
   }
 
-  div.container-component {
-    width: 100%;
+  div.container-fluid {
+    border-radius: 0px;
   }
 
-  div.box-component.box-cyan-darker {
-    border-radius: 0px 0px 0px 0px;
-  }
-  div.box-component.box-cyan-lighter {
-    border-radius: 0px 0px 10px 10px;
+  div.container-component {
+    width: 100%;
   }
 }
 @media only screen and (min-width: 375px) and (max-width: 768px) {
@@ -91,15 +90,12 @@ button.bright-yellow:hover {
     margin-top: 0;
   }
 
-  div.container-component {
-    width: 100%;
+  div.container-fluid {
+    border-radius: 0px;
   }
 
-  div.box-component.box-cyan-darker {
-    border-radius: 0px 0px 0px 0px;
-  }
-  div.box-component.box-cyan-lighter {
-    border-radius: 0px 0px 10px 10px;
+  div.container-component {
+    width: 100%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -109,13 +105,6 @@ button.bright-yellow:hover {
 
   div.container-component {
     width: 75%;
-  }
-
-  div.box-component.box-cyan-darker {
-    border-radius: 0px 0px 0px 10px;
-  }
-  div.box-component.box-cyan-lighter {
-    border-radius: 0px 0px 10px 0px;
   }
 }
 @media only screen and (min-width: 992px) {
