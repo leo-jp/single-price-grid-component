@@ -6,7 +6,7 @@ $neutral-color:("white": hsl(0,0,100),"washed": hsl(206,47,93), "light-gray": hs
 $font:("size-16": 16px, "Karla": "Karla", "weight-400": 400, "weight-700": 700);
 
 body {
-    //font-family: map.get($font, "Karla");
+    font-family: (map.get($font, "Karla"), sans-serif);
     font-size: map.get($font, "size-16");
     color: map.get($neutral-color, "light-gray");
     background-color: map.get($neutral-color, "washed");
@@ -32,7 +32,7 @@ div.container-component {
     align-items: center;
     width: 50%;
     border-radius: .5em; 
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.05);
 }
 
 div.box-component {
@@ -44,7 +44,7 @@ div.box-component {
         margin-bottom: .5em;
     }
 
-    h3 {
+    h2 {
         color: map.get($primary-color, "bright-yellow");
         margin-bottom: .5em;
     }
@@ -82,13 +82,22 @@ div.box-component {
 
 button.bright-yellow {
     background-color:map.get($primary-color, "bright-yellow");
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.06);
     border: none;
+    cursor: pointer;
 
-    &:hover {
-        background-color: map.get($primary-color, "dark-yellow");
+    &:focus {
+        background-color:map.get($primary-color, "bright-yellow");
+        box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.06);
     }
-}
+
+    &:hover,
+    &:active {
+        background-color: map.get($primary-color, "dark-yellow");
+        box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.06);
+        outline:0 !important;
+    }
+  }
 
 @media only screen and (max-width: map.get($layout, "mobile")) {
     div.mt {
