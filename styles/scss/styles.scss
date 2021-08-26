@@ -12,6 +12,8 @@ body {
     background-color: map.get($neutral-color, "washed");
     font-weight: map.get($font, "weight-400");
     text-align: left;
+    letter-spacing: .1rem;
+    line-height: 1.6;
 }
 
 div.mt {
@@ -41,16 +43,20 @@ div.box-component {
 
     h1 {
         color: map.get($primary-color, "cyan");
+        font-weight: map.get($font, "weight-700");
+        font-size: 40px;
         margin-bottom: .5em;
     }
 
     h2 {
         color: map.get($primary-color, "bright-yellow");
-        margin-bottom: .5em;
+        font-size: 30px;
+        margin-bottom: .4em;
     }
 
-    h4 {
+    h3 {
         color: map.get($neutral-color, "light-gray");
+        font-size: 25px;
         margin-bottom: 1em;
     }
 
